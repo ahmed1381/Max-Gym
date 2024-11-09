@@ -13,15 +13,12 @@
 
 This section provides the steps to integrate and use Tailwind CSS in this project.
 
-### 1. Install Tailwind CSS
+### 1. Clone the repositorie
 
-#### Using npm
+### 2. npm install
 
-Install Tailwind CSS and its dependencies via npm:
+### 3. nvm use 21
 
-```bash
-npm install -D tailwindcss
-npx tailwindcss init
-```
+### 4. npm run watch
 
 ### For desktop  (LG screen)
