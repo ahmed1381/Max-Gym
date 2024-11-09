@@ -21,4 +21,6 @@ This section provides the steps to integrate and use Tailwind CSS in this projec
 
 ### 4. npm run watch
 
+### 5. Then open index.html
+
 ### For desktop  (LG screen)
