@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+          rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="bg-primary">
+
+
+<!-- Nav Section -->
+<div class="bg-gradient-to-b from-secondary to-primary">
+    <div class="max-w-7xl m-auto navbar flex justify-between">
+        <div class="flex justify-between lg:hidden lg:mt-[-2rem]">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                         stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16"/>
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li>
+                        <a>More</a>
+                        <ul class="p-2">
+                            <li><a>Clients</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <a class="text-xl">
+                <div class="flex items-center text-text font-black">
+                    <img class="h-20 w-20" src="../img/Logo.png" alt="LOGO">
+                    <p>MAX-GYM</p>
+                </div>
+            </a>
+        </div>
+        <div class="hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-text font-black text-base">
+                <li><a>Home</a></li>
+                <li>
+                    <details>
+                        <summary>More</summary>
+                        <ul class="p-2 text-pureWhite bg-secondary">
+                            <li><a>Clients</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a>Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <a class="btn bg-primary text-text py-2 px-8 text-base">Sign Up</a>
+        </div>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<div>
+    <div class="max-w-7xl m-auto">
+        <div class="flex items-center justify-between gap-36">
+            <div class="flex flex-col mt-16">
+
+                <div>
+                    <p class="text-5xl font-black text-pureWhite flex flex-col">
+                        <span class="flex items-center">Stay Healthy <img class="w-20 h-20 ms-[-1.5rem] mt-12"
+                                                                          src="../img/enrgy.png" alt=""> </span>
+                        <span class="text-action ps-[19.7rem] mt-[-3rem]">And Fit</span>
+                    </p>
+                </div>
+
+                <div>
+                    <p class="w-[80%] mt-8 text-text font-black text-lg">
+                        "Step into our gym, where energy thrives. State-of-the-art equipment awaits, ready to propel
+                        your
+                        fitness
+                        journey. Feel the pulse of motivation in the air, as members strive towards their goals. Join a
+                        supportive community, where every workout is a step closer to success. Experience the difference
+                        of
+                        our
+                        vibrant fitness family today."
+                    </p>
+                </div>
+
+                <div class="flex gap-[1rem] mt-8">
+                    <button class="bg-gradient-to-r from-action to-actiong text-xl text-pureWhite font-black px-12 py-2 rounded-md hover:secondary-hover hover:bg-action-hover">
+                        Learn More
+                    </button>
+                    <button class="bg-pureWhite text-xl text-primary font-black px-12 py-2 rounded-md hover:secondary-hover hover:bg-gray-300">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+
+            <div class="w-auto mt-24">
+                <img class="w-[150rem] rounded-xl bg-primary shadow-lg shadow-white/20"
+                     src="../img/athletic-person-exercising-working-out.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Calculating calories Section -->
+<div class="bg-gradient-to-b mt-16 from-primary to-secondary pb-16">
+    <div>
+        <p class="text-center text-5xl text-pureWhite font-black pt-16">Calculating calories</p>
+    </div>
+
+    <div class="max-w-7xl m-auto">
+        <div class="m-8 flex justify-center mt-16">
+            <div class="relative w-full max-w-xs">
+                <img class="absolute left-2 top-1/2 transform -translate-y-1/2 w-6 h-6 focus:bg-primary focus:shadow-lg focus:shadow-white/20"
+                     src="../img/height.png"
+                     alt="Height Icon">
+                <p class="absolute ms-44 top-1/2 transform -translate-y-1/2 w-6 h-6 focus:bg-primary focus:shadow-lg focus:shadow-white/20 font-black">
+                    CM</p>
+                <input type="text" autocomplete="off" name="height" id="height"
+                       class="pl-10 border-none outline-none rounded-md p-2 bg-primary shadow-input text-grey font-black shadow-lg shadow-white/10"
+                       placeholder="height">
+            </div>
+
+            <div class="relative w-full max-w-xs">
+                <img class="absolute left-3 top-1/2 transform -translate-y-1/2 w-6 h-6" src="../img/scales.png"
+                     alt="Height Icon">
+                <p class="absolute ms-48 top-1/2 transform -translate-y-1/2 w-6 h-6 focus:bg-primary focus:shadow-lg focus:shadow-white/20 font-black">
+                    KG</p>
+                <input type="text" autocomplete="off" name="weight" id="weight"
+                       class="pl-12 border-none outline-none rounded-md p-2 bg-primary shadow-input text-grey font-black shadow-lg shadow-white/10"
+                       placeholder="weight">
+            </div>
+
+            <div class="relative w-full max-w-xs">
+                <img class="absolute left-3 top-1/2 transform -translate-y-1/2 w-6 h-6" src="../img/bmi.png"
+                     alt="Height Icon">
+                <p class="absolute ms-44 top-1/2 transform -translate-y-1/2 w-6 h-6 focus:bg-primary focus:shadow-lg focus:shadow-white/20 font-black">
+                    BMI</p>
+                <input type="text" autocomplete="off" name="Bmi" id="Bmi"
+                       class="pl-12 border-none outline-none rounded-md p-2 bg-primary shadow-input text-grey font-black shadow-lg shadow-white/10"
+                       placeholder="Bmi">
+            </div>
+
+            <div class="relative w-full max-w-xs">
+                <img class="absolute left-3 top-1/2 transform -translate-y-1/2 w-6 h-6" src="../img/bmi.png"
+                     alt="Height Icon">
+                <p class="absolute ms-44 top-1/2 transform -translate-y-1/2 w-6 h-6 focus:bg-primary focus:shadow-lg focus:shadow-white/20 font-black">
+                    BBF</p>
+                <input type="text" autocomplete="off" name="BBF" id="BBf"
+                       class="pl-12 border-none outline-none rounded-md p-2 bg-primary shadow-input text-grey font-black shadow-lg shadow-white/10"
+                       placeholder="BBF %">
+            </div>
+
+        </div>
+
+        <div class="m-8 mt-16 flex gap-80 items-center justify-center">
+            <button class="bg-gradient-to-r from-action to-actiong text-xl text-pureWhite font-black px-12 py-2 rounded-md hover:secondary-hover hover:bg-action-hover"
+                    id="calc">
+                Calc
+            </button>
+            <div class="mb-4 flex items-center">
+                <p id="total" class="text-2xl font-black text-text">BMR = </p>
+                <input type="button"
+                       class="btn-price p-2 rounded-md focus:outline-none w-[16.2rem] text-pureWhite text-2xl font-black">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Programing Section -->
+<div class="bg-gradient-to-b from-secondary to-primary mb-16">
+    <div class="max-w-7xl m-auto">
+        <div>
+            <h2 class="text-4xl font-black text-pureWhite text-center pt-16">PROGRAM</h2>
+        </div>
+        <div class="grid grid-cols-12 gap-16 mt-16 pb-16 border-b-2 border-white">
+            <div class="col-span-6 bg-primary shadow-lg shadow-white/20 rounded-xl">
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="w-[60rem] h-[19rem]" src="../img/man-training-rings.jpg" alt="Strength Training"/>
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-pureWhite font-black">Strength Training</h2>
+                        <p class="text-text font-black">Strength training uses resistance exercises like weightlifting
+                            and bodyweight movements to improve muscle strength and endurance. It offers benefits such
+                            as increased muscle mass, better bone density, and enhanced metabolism.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn bg-gradient-to-r from-action to-actiong text-pureWhite font-black rounded-md hover:secondary-hover hover:bg-action-hover">
+                                Lern More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-6 bg-primary shadow-lg shadow-white/20 rounded-xl">
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="w-[60rem] h-[19rem]" src="../img/person-doing-indoor-cycling.jpg"
+                             alt="Strength Training"/>
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-pureWhite font-black">Cardio Training</h2>
+                        <p class="text-text font-black">Cardio training is essential for maintaining a healthy heart,
+                            improving endurance, and supporting overall well-being. Whether you're walking, running,
+                            cycling, or swimming, regular cardiovascular exercise can greatly enhance your quality of
+                            life.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn bg-gradient-to-r from-action to-actiong text-pureWhite font-black rounded-md hover:secondary-hover hover:bg-action-hover">
+                                Lern More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-6 bg-primary shadow-lg shadow-white/20 rounded-xl">
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="w-[60rem] h-[19rem]"
+                             src="../img/sexy-naked-guy-with-muscular-body-doing-exercise-with-dumbbells-biceps-gym.jpg"
+                             alt="Strength Training"/>
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-pureWhite font-black">Shape Body</h2>
+                        <p class="text-text font-black">Shaping your body involves strength training to build muscle,
+                            cardio exercise to burn calories, and proper nutrition for overall health. Combine these
+                            with adequate rest and recovery for best results. Consistency is key to achieving your
+                            fitness goals.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn bg-gradient-to-r from-action to-actiong text-pureWhite font-black rounded-md hover:secondary-hover hover:bg-action-hover">
+                                Lern More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-6 bg-primary shadow-lg shadow-white/20 rounded-xl">
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="w-[60rem] h-[19rem]"
+                             src="../img/vertical-closeup-person-holding-bowl-salad-with-crackers-vegetables-lights.jpg"/>
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-pureWhite font-black">Healthy Food</h2>
+                        <p class="text-text font-black">Healthy food comprises nutrient-rich options like fruits,
+                            vegetables, whole grains, and lean proteins, which support overall health. Staying hydrated
+                            with water and limiting sugary drinks is also crucial. Embracing these choices fosters .</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn bg-gradient-to-r from-action to-actiong text-pureWhite font-black rounded-md hover:secondary-hover hover:bg-action-hover">
+                                Lern More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Price Section -->
+<div class="bg-gradient-to-b from-primary to-secondary">
+
+    <div class="max-w-7xl m-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+        <div class="flex items-center justify-center gap-16">
+
+            <div class="rounded-2xl border border-gray-200 w-[18rem] p-6 shadow-sm sm:px-8 lg:p-12 bg-primary hover:scale-110 hover:w-[18rem]">
+                <div class="text-center">
+                    <h2 class="text-lg font-medium text-text">
+                        Starter
+                        <span class="sr-only">Plan</span>
+                    </h2>
+
+                    <p class="mt-2 sm:mt-4">
+                        <strong class="text-3xl font-bold text-text sm:text-4xl"> 20$ </strong>
+
+                        <span class="text-sm font-medium text-pureWhite font-black">/month</span>
+                    </p>
+                </div>
+
+                <ul class="mt-6 space-y-2">
+                    <li class="flex items-center gap-1">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2.5"
+                                stroke="#fff"
+                                class="size-6 text-indigo-700"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                        </svg>
+
+                        <span class="text-pureWhite font-black"> 10 users included </span>
+                    </li>
+
+                    <li class="flex items-center gap-1">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2.5"
+                                stroke="#fff"
+                                class="size-6 text-indigo-700"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                        </svg>
+
+                        <span class="text-pureWhite font-black"> 2GB of storage </span>
+                    </li>
+
+                    <li class="flex items-center gap-1">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2.5"
+                                stroke="#fff"
+                                class="size-6 text-indigo-700"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                        </svg>
+
+                        <span class="text-pureWhite font-black"> Email support </span>
+                    </li>
+
+                    <li class="flex items-center gap-1">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2.5"
+                                stroke="#fff"
+                                class="size-6 text-indigo-700"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                        </svg>
+
+                        <span class="text-pureWhite font-black"> Help center access </span>
+                    </li>
+                </ul>
+
+                <a
+                        href="#"
+                        class="mt-8 block rounded-full border border-indigo-600 bg-white px-12 py-3 text-center text-sm font-medium text-indigo-600 hover:ring-1 hover:ring-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+                >
+                    Subscribe
+                </a>
+            </div>
+
+            <div class="rounded-2xl border border-gray-200 w-[18rem] p-6 shadow-sm sm:px-8 lg:p-12 bg-primary hover:scale-110 hover:w-[18rem] mb-20">
+                <div class="text-center">
+                    <h2 class="text-lg font-medium text-text">
+                        Starter
+                        <span class="sr-only">Plan</span>
+                    </h2>
+
+                    <p class="mt-2 sm:mt-4">
+                        <strong class="text-3xl font-bold text-text sm:text-4xl"> 20$ </strong>
+
+                        <span class="text-sm font-medium text-pureWhite font-black">/month</span>
+                    </p>
+                </div>
+
+                <ul class="mt-6 space-y-2">
+                    <li class="flex items-center gap-1">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2.5"
+                                stroke="#fff"
+                                class="size-6 text-indigo-700"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                        </svg>
+
+                        <span class="text-pureWhite font-black"> 10 users included </span>
+                    </li>
+
+                    <li class="flex items-center gap-1">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2.5"
+                                stroke="#fff"
+                                class="size-6 text-indigo-700"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                        </svg>
+
+                        <span class="text-pureWhite font-black"> 2GB of storage </span>
+                    </li>
+
+                    <li class="flex items-center gap-1">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2.5"
+                                stroke="#fff"
+                                class="size-6 text-indigo-700"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                        </svg>
+
+                        <span class="text-pureWhite font-black"> Email support </span>
+                    </li>
+
+                    <li class="flex items-center gap-1">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2.5"
+                                stroke="#fff"
+                                class="size-6 text-indigo-700"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                        </svg>
+
+                        <span class="text-pureWhite font-black"> Help center access </span>
+                    </li>
+                </ul>
+
+                <a
+                        href="#"
+                        class="mt-8 block rounded-full border border-indigo-600 bg-white px-12 py-3 text-center text-sm font-medium text-indigo-600 hover:ring-1 hover:ring-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+                >
+                    Subscribe
+                </a>
+            </div>
+
+            <div class="rounded-2xl border border-gray-200 w-[18rem] p-6 shadow-sm sm:px-8 lg:p-12 bg-primary hover:scale-110 hover:w-[18rem]">
+                <div class="text-center">
+                    <h2 class="text-lg font-medium text-text">
+                        Starter
+                        <span class="sr-only">Plan</span>
+                    </h2>
+
+                    <p class="mt-2 sm:mt-4">
+                        <strong class="text-3xl font-bold text-text sm:text-4xl"> 20$ </strong>
+
+                        <span class="text-sm font-medium text-pureWhite font-black">/month</span>
+                    </p>
+                </div>
+
+                <ul class="mt-6 space-y-2">
+                    <li class="flex items-center gap-1">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2.5"
+                                stroke="#fff"
+                                class="size-6 text-indigo-700"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                        </svg>
+
+                        <span class="text-pureWhite font-black"> 10 users included </span>
+                    </li>
+
+                    <li class="flex items-center gap-1">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2.5"
+                                stroke="#fff"
+                                class="size-6 text-indigo-700"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                        </svg>
+
+                        <span class="text-pureWhite font-black"> 2GB of storage </span>
+                    </li>
+
+                    <li class="flex items-center gap-1">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2.5"
+                                stroke="#fff"
+                                class="size-6 text-indigo-700"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                        </svg>
+
+                        <span class="text-pureWhite font-black"> Email support </span>
+                    </li>
+
+                    <li class="flex items-center gap-1">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2.5"
+                                stroke="#fff"
+                                class="size-6 text-indigo-700"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                        </svg>
+
+                        <span class="text-pureWhite font-black"> Help center access </span>
+                    </li>
+                </ul>
+
+                <a
+                        href="#"
+                        class="mt-8 block rounded-full bg-gradient-to-r from-action to-actiong px-12 py-3 text-center text-sm font-medium text-pureWhite font-black hover:ring-1 hover:ring-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+                >
+                    Subscribe
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
